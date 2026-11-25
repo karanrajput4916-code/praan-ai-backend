@@ -9,7 +9,6 @@ import companion
 app = FastAPI(title="k_rajput Backend")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
-# direct module import
 gemini_stt = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 print("Cloud Backend ready!")
 
